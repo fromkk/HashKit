@@ -14,6 +14,12 @@
 		4F2ACB641D24F09A00F4F7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2ACB621D24F09A00F4F7FE /* LaunchScreen.storyboard */; };
 		4F2ACB6F1D24F09A00F4F7FE /* HashableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB6E1D24F09A00F4F7FE /* HashableDemoTests.swift */; };
 		4F2ACB7A1D24F09A00F4F7FE /* HashableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB791D24F09A00F4F7FE /* HashableDemoUITests.swift */; };
+		4F2ACB8F1D24F0A300F4F7FE /* Hashable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2ACB8E1D24F0A300F4F7FE /* Hashable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F2ACB961D24F0A300F4F7FE /* Hashable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; };
+		4F2ACB9D1D24F0A300F4F7FE /* HashableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */; };
+		4F2ACBA11D24F0A300F4F7FE /* Hashable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; };
+		4F2ACBA21D24F0A300F4F7FE /* Hashable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F2ACBAD1D24F0BE00F4F7FE /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,42 @@
 			remoteGlobalIDString = 4F2ACB551D24F09900F4F7FE;
 			remoteInfo = HashableDemo;
 		};
+		4F2ACB971D24F0A300F4F7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F2ACB4E1D24F09900F4F7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F2ACB8B1D24F0A300F4F7FE;
+			remoteInfo = Hashable;
+		};
+		4F2ACB991D24F0A300F4F7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F2ACB4E1D24F09900F4F7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F2ACB551D24F09900F4F7FE;
+			remoteInfo = HashableDemo;
+		};
+		4F2ACB9F1D24F0A300F4F7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F2ACB4E1D24F09900F4F7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F2ACB8B1D24F0A300F4F7FE;
+			remoteInfo = Hashable;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F2ACBA61D24F0A400F4F7FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F2ACBA21D24F0A300F4F7FE /* Hashable.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F2ACB561D24F09A00F4F7FE /* HashableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +88,13 @@
 		4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB791D24F09A00F4F7FE /* HashableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableDemoUITests.swift; sourceTree = "<group>"; };
 		4F2ACB7B1D24F09A00F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hashable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB8E1D24F0A300F4F7FE /* Hashable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashable.h; sourceTree = "<group>"; };
+		4F2ACB901D24F0A300F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTests.swift; sourceTree = "<group>"; };
+		4F2ACB9E1D24F0A300F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2ACBA11D24F0A300F4F7FE /* Hashable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +120,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F2ACB881D24F0A300F4F7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2ACB921D24F0A300F4F7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2ACB961D24F0A300F4F7FE /* Hashable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4F2ACB4D1D24F09900F4F7FE = {
 			isa = PBXGroup;
 			children = (
+				4F2ACBAA1D24F0AA00F4F7FE /* Sources */,
 				4F2ACB581D24F09A00F4F7FE /* HashableDemo */,
 				4F2ACB6D1D24F09A00F4F7FE /* HashableDemoTests */,
 				4F2ACB781D24F09A00F4F7FE /* HashableDemoUITests */,
+				4F2ACB8D1D24F0A300F4F7FE /* Hashable */,
+				4F2ACB9B1D24F0A300F4F7FE /* HashableTests */,
 				4F2ACB571D24F09A00F4F7FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				4F2ACB561D24F09A00F4F7FE /* HashableDemo.app */,
 				4F2ACB6A1D24F09A00F4F7FE /* HashableDemoTests.xctest */,
 				4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */,
+				4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */,
+				4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +194,44 @@
 			path = HashableDemoUITests;
 			sourceTree = "<group>";
 		};
+		4F2ACB8D1D24F0A300F4F7FE /* Hashable */ = {
+			isa = PBXGroup;
+			children = (
+				4F2ACB8E1D24F0A300F4F7FE /* Hashable.h */,
+				4F2ACB901D24F0A300F4F7FE /* Info.plist */,
+			);
+			path = Hashable;
+			sourceTree = "<group>";
+		};
+		4F2ACB9B1D24F0A300F4F7FE /* HashableTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */,
+				4F2ACB9E1D24F0A300F4F7FE /* Info.plist */,
+			);
+			path = HashableTests;
+			sourceTree = "<group>";
+		};
+		4F2ACBAA1D24F0AA00F4F7FE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F2ACB891D24F0A300F4F7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2ACB8F1D24F0A300F4F7FE /* Hashable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4F2ACB551D24F09900F4F7FE /* HashableDemo */ = {
@@ -135,10 +241,12 @@
 				4F2ACB521D24F09900F4F7FE /* Sources */,
 				4F2ACB531D24F09900F4F7FE /* Frameworks */,
 				4F2ACB541D24F09900F4F7FE /* Resources */,
+				4F2ACBA61D24F0A400F4F7FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F2ACBA01D24F0A300F4F7FE /* PBXTargetDependency */,
 			);
 			name = HashableDemo;
 			productName = HashableDemo;
@@ -181,6 +289,43 @@
 			productReference = 4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4F2ACB8B1D24F0A300F4F7FE /* Hashable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "Hashable" */;
+			buildPhases = (
+				4F2ACB871D24F0A300F4F7FE /* Sources */,
+				4F2ACB881D24F0A300F4F7FE /* Frameworks */,
+				4F2ACB891D24F0A300F4F7FE /* Headers */,
+				4F2ACB8A1D24F0A300F4F7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hashable;
+			productName = Hashable;
+			productReference = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F2ACB941D24F0A300F4F7FE /* HashableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F2ACBA71D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "HashableTests" */;
+			buildPhases = (
+				4F2ACB911D24F0A300F4F7FE /* Sources */,
+				4F2ACB921D24F0A300F4F7FE /* Frameworks */,
+				4F2ACB931D24F0A300F4F7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F2ACB981D24F0A300F4F7FE /* PBXTargetDependency */,
+				4F2ACB9A1D24F0A300F4F7FE /* PBXTargetDependency */,
+			);
+			name = HashableTests;
+			productName = HashableTests;
+			productReference = 4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +347,13 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 4F2ACB551D24F09900F4F7FE;
 					};
+					4F2ACB8B1D24F0A300F4F7FE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4F2ACB941D24F0A300F4F7FE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4F2ACB551D24F09900F4F7FE;
+					};
 				};
 			};
 			buildConfigurationList = 4F2ACB511D24F09900F4F7FE /* Build configuration list for PBXProject "HashableDemo" */;
@@ -220,6 +372,8 @@
 				4F2ACB551D24F09900F4F7FE /* HashableDemo */,
 				4F2ACB691D24F09A00F4F7FE /* HashableDemoTests */,
 				4F2ACB741D24F09A00F4F7FE /* HashableDemoUITests */,
+				4F2ACB8B1D24F0A300F4F7FE /* Hashable */,
+				4F2ACB941D24F0A300F4F7FE /* HashableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +397,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4F2ACB731D24F09A00F4F7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2ACB8A1D24F0A300F4F7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2ACB931D24F0A300F4F7FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +445,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F2ACB871D24F0A300F4F7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2ACBAD1D24F0BE00F4F7FE /* Hashable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2ACB911D24F0A300F4F7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2ACB9D1D24F0A300F4F7FE /* HashableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +473,21 @@
 			isa = PBXTargetDependency;
 			target = 4F2ACB551D24F09900F4F7FE /* HashableDemo */;
 			targetProxy = 4F2ACB761D24F09A00F4F7FE /* PBXContainerItemProxy */;
+		};
+		4F2ACB981D24F0A300F4F7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F2ACB8B1D24F0A300F4F7FE /* Hashable */;
+			targetProxy = 4F2ACB971D24F0A300F4F7FE /* PBXContainerItemProxy */;
+		};
+		4F2ACB9A1D24F0A300F4F7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F2ACB551D24F09900F4F7FE /* HashableDemo */;
+			targetProxy = 4F2ACB991D24F0A300F4F7FE /* PBXContainerItemProxy */;
+		};
+		4F2ACBA01D24F0A300F4F7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F2ACB8B1D24F0A300F4F7FE /* Hashable */;
+			targetProxy = 4F2ACB9F1D24F0A300F4F7FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -353,6 +552,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -391,6 +591,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,10 +600,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HashableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 			};
 			name = Debug;
 		};
@@ -410,10 +613,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HashableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 			};
 			name = Release;
 		};
@@ -463,6 +668,73 @@
 			};
 			name = Release;
 		};
+		4F2ACBA41D24F0A400F4F7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Hashable/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.Hashable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F2ACBA51D24F0A400F4F7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Hashable/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.Hashable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F2ACBA81D24F0A400F4F7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HashableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+			};
+			name = Debug;
+		};
+		4F2ACBA91D24F0A400F4F7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HashableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +768,22 @@
 			buildConfigurations = (
 				4F2ACB851D24F09A00F4F7FE /* Debug */,
 				4F2ACB861D24F09A00F4F7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "Hashable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2ACBA41D24F0A400F4F7FE /* Debug */,
+				4F2ACBA51D24F0A400F4F7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F2ACBA71D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "HashableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2ACBA81D24F0A400F4F7FE /* Debug */,
+				4F2ACBA91D24F0A400F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

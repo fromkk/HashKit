@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Hashable
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("test".md5())
+        print("test".sha1())
+        print("test".sha256())
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,4 +27,3 @@ class ViewController: UIViewController {
 
 
 }
-
