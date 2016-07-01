@@ -17,7 +17,10 @@ private protocol HashablePrivate {
 public protocol Hashable {
     func md5() -> String?
     func sha1() -> String?
+    func sha224() -> String?
     func sha256() -> String?
+    func sha384() -> String?
+    func sha512() -> String?
 }
 
 extension NSData: Hashable, HashablePrivate {
@@ -42,10 +45,21 @@ extension NSData: Hashable, HashablePrivate {
         return self.hash(CC_SHA1, digestLength: CC_SHA1_DIGEST_LENGTH)
     }
 
+    public func sha224() -> String? {
+        return self.hash(CC_SHA224, digestLength: CC_SHA224_DIGEST_LENGTH)
+    }
+
     public func sha256() -> String? {
         return self.hash(CC_SHA256, digestLength: CC_SHA256_DIGEST_LENGTH)
     }
 
+    public func sha384() -> String? {
+        return self.hash(CC_SHA384, digestLength: CC_SHA384_DIGEST_LENGTH)
+    }
+
+    public func sha512() -> String? {
+        return self.hash(CC_SHA512, digestLength: CC_SHA512_DIGEST_LENGTH)
+    }
 }
 
 extension String: Hashable {
@@ -63,10 +77,31 @@ extension String: Hashable {
         return data.sha1()
     }
 
+    public func sha224() -> String? {
+        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+            return nil
+        }
+        return data.sha224()
+    }
+
     public func sha256() -> String? {
         guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
             return nil
         }
         return data.sha256()
+    }
+
+    public func sha384() -> String? {
+        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+            return nil
+        }
+        return data.sha384()
+    }
+
+    public func sha512() -> String? {
+        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+            return nil
+        }
+        return data.sha512()
     }
 }
