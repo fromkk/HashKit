@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         print("test".md5())
         print("test".sha1())
         print("test".sha256())
+        print("test".hmac(.md5, key: "key"))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
