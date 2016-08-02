@@ -15,11 +15,11 @@
 		4F2ACB6F1D24F09A00F4F7FE /* HashableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB6E1D24F09A00F4F7FE /* HashableDemoTests.swift */; };
 		4F2ACB7A1D24F09A00F4F7FE /* HashableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB791D24F09A00F4F7FE /* HashableDemoUITests.swift */; };
 		4F2ACB8F1D24F0A300F4F7FE /* Hashable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2ACB8E1D24F0A300F4F7FE /* Hashable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F2ACB961D24F0A300F4F7FE /* Hashable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; };
+		4F2ACB961D24F0A300F4F7FE /* HashKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */; };
 		4F2ACB9D1D24F0A300F4F7FE /* HashableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */; };
-		4F2ACBA11D24F0A300F4F7FE /* Hashable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; };
-		4F2ACBA21D24F0A300F4F7FE /* Hashable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F2ACBAD1D24F0BE00F4F7FE /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */; };
+		4F2ACBA11D24F0A300F4F7FE /* HashKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */; };
+		4F2ACBA21D24F0A300F4F7FE /* HashKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F2ACBAD1D24F0BE00F4F7FE /* HashKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F2ACBA21D24F0A300F4F7FE /* Hashable.framework in Embed Frameworks */,
+				4F2ACBA21D24F0A300F4F7FE /* HashKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,26 +75,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F2ACB561D24F09A00F4F7FE /* HashableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB561D24F09A00F4F7FE /* HashKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB591D24F09A00F4F7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F2ACB5B1D24F09A00F4F7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F2ACB5E1D24F09A00F4F7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F2ACB601D24F09A00F4F7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F2ACB631D24F09A00F4F7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F2ACB651D24F09A00F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F2ACB6A1D24F09A00F4F7FE /* HashableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB6A1D24F09A00F4F7FE /* HashKitDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashKitDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB6E1D24F09A00F4F7FE /* HashableDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableDemoTests.swift; sourceTree = "<group>"; };
 		4F2ACB701D24F09A00F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB751D24F09A00F4F7FE /* HashKitDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashKitDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB791D24F09A00F4F7FE /* HashableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableDemoUITests.swift; sourceTree = "<group>"; };
 		4F2ACB7B1D24F09A00F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hashable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB8E1D24F0A300F4F7FE /* Hashable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashable.h; sourceTree = "<group>"; };
 		4F2ACB901D24F0A300F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTests.swift; sourceTree = "<group>"; };
 		4F2ACB9E1D24F0A300F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
+		4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2ACBA11D24F0A300F4F7FE /* Hashable.framework in Frameworks */,
+				4F2ACBA11D24F0A300F4F7FE /* HashKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2ACB961D24F0A300F4F7FE /* Hashable.framework in Frameworks */,
+				4F2ACB961D24F0A300F4F7FE /* HashKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +154,10 @@
 		4F2ACB571D24F09A00F4F7FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F2ACB561D24F09A00F4F7FE /* HashableDemo.app */,
-				4F2ACB6A1D24F09A00F4F7FE /* HashableDemoTests.xctest */,
-				4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */,
-				4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */,
+				4F2ACB561D24F09A00F4F7FE /* HashKitDemo.app */,
+				4F2ACB6A1D24F09A00F4F7FE /* HashKitDemo.xctest */,
+				4F2ACB751D24F09A00F4F7FE /* HashKitDemo.xctest */,
+				4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */,
 				4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */,
 			);
 			name = Products;
@@ -215,7 +215,7 @@
 		4F2ACBAA1D24F0AA00F4F7FE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4F2ACBAB1D24F0BE00F4F7FE /* Hashable.swift */,
+				4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -234,9 +234,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4F2ACB551D24F09900F4F7FE /* HashableDemo */ = {
+		4F2ACB551D24F09900F4F7FE /* HashKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2ACB7E1D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemo" */;
+			buildConfigurationList = 4F2ACB7E1D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemo" */;
 			buildPhases = (
 				4F2ACB521D24F09900F4F7FE /* Sources */,
 				4F2ACB531D24F09900F4F7FE /* Frameworks */,
@@ -248,14 +248,14 @@
 			dependencies = (
 				4F2ACBA01D24F0A300F4F7FE /* PBXTargetDependency */,
 			);
-			name = HashableDemo;
+			name = HashKitDemo;
 			productName = HashableDemo;
-			productReference = 4F2ACB561D24F09A00F4F7FE /* HashableDemo.app */;
+			productReference = 4F2ACB561D24F09A00F4F7FE /* HashKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4F2ACB691D24F09A00F4F7FE /* HashableDemoTests */ = {
+		4F2ACB691D24F09A00F4F7FE /* HashKitDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2ACB811D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemoTests" */;
+			buildConfigurationList = 4F2ACB811D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemoTests" */;
 			buildPhases = (
 				4F2ACB661D24F09A00F4F7FE /* Sources */,
 				4F2ACB671D24F09A00F4F7FE /* Frameworks */,
@@ -266,14 +266,14 @@
 			dependencies = (
 				4F2ACB6C1D24F09A00F4F7FE /* PBXTargetDependency */,
 			);
-			name = HashableDemoTests;
+			name = HashKitDemoTests;
 			productName = HashableDemoTests;
-			productReference = 4F2ACB6A1D24F09A00F4F7FE /* HashableDemoTests.xctest */;
+			productReference = 4F2ACB6A1D24F09A00F4F7FE /* HashKitDemo.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4F2ACB741D24F09A00F4F7FE /* HashableDemoUITests */ = {
+		4F2ACB741D24F09A00F4F7FE /* HashKitDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2ACB841D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemoUITests" */;
+			buildConfigurationList = 4F2ACB841D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemoUITests" */;
 			buildPhases = (
 				4F2ACB711D24F09A00F4F7FE /* Sources */,
 				4F2ACB721D24F09A00F4F7FE /* Frameworks */,
@@ -284,14 +284,14 @@
 			dependencies = (
 				4F2ACB771D24F09A00F4F7FE /* PBXTargetDependency */,
 			);
-			name = HashableDemoUITests;
+			name = HashKitDemoUITests;
 			productName = HashableDemoUITests;
-			productReference = 4F2ACB751D24F09A00F4F7FE /* HashableDemoUITests.xctest */;
+			productReference = 4F2ACB751D24F09A00F4F7FE /* HashKitDemo.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		4F2ACB8B1D24F0A300F4F7FE /* Hashable */ = {
+		4F2ACB8B1D24F0A300F4F7FE /* HashKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "Hashable" */;
+			buildConfigurationList = 4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "HashKit" */;
 			buildPhases = (
 				4F2ACB871D24F0A300F4F7FE /* Sources */,
 				4F2ACB881D24F0A300F4F7FE /* Frameworks */,
@@ -302,9 +302,9 @@
 			);
 			dependencies = (
 			);
-			name = Hashable;
+			name = HashKit;
 			productName = Hashable;
-			productReference = 4F2ACB8C1D24F0A300F4F7FE /* Hashable.framework */;
+			productReference = 4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4F2ACB941D24F0A300F4F7FE /* HashableTests */ = {
@@ -356,7 +356,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F2ACB511D24F09900F4F7FE /* Build configuration list for PBXProject "HashableDemo" */;
+			buildConfigurationList = 4F2ACB511D24F09900F4F7FE /* Build configuration list for PBXProject "HashKitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -369,10 +369,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F2ACB551D24F09900F4F7FE /* HashableDemo */,
-				4F2ACB691D24F09A00F4F7FE /* HashableDemoTests */,
-				4F2ACB741D24F09A00F4F7FE /* HashableDemoUITests */,
-				4F2ACB8B1D24F0A300F4F7FE /* Hashable */,
+				4F2ACB551D24F09900F4F7FE /* HashKitDemo */,
+				4F2ACB691D24F09A00F4F7FE /* HashKitDemoTests */,
+				4F2ACB741D24F09A00F4F7FE /* HashKitDemoUITests */,
+				4F2ACB8B1D24F0A300F4F7FE /* HashKit */,
 				4F2ACB941D24F0A300F4F7FE /* HashableTests */,
 			);
 		};
@@ -449,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2ACBAD1D24F0BE00F4F7FE /* Hashable.swift in Sources */,
+				4F2ACBAD1D24F0BE00F4F7FE /* HashKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,27 +466,27 @@
 /* Begin PBXTargetDependency section */
 		4F2ACB6C1D24F09A00F4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F2ACB551D24F09900F4F7FE /* HashableDemo */;
+			target = 4F2ACB551D24F09900F4F7FE /* HashKitDemo */;
 			targetProxy = 4F2ACB6B1D24F09A00F4F7FE /* PBXContainerItemProxy */;
 		};
 		4F2ACB771D24F09A00F4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F2ACB551D24F09900F4F7FE /* HashableDemo */;
+			target = 4F2ACB551D24F09900F4F7FE /* HashKitDemo */;
 			targetProxy = 4F2ACB761D24F09A00F4F7FE /* PBXContainerItemProxy */;
 		};
 		4F2ACB981D24F0A300F4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F2ACB8B1D24F0A300F4F7FE /* Hashable */;
+			target = 4F2ACB8B1D24F0A300F4F7FE /* HashKit */;
 			targetProxy = 4F2ACB971D24F0A300F4F7FE /* PBXContainerItemProxy */;
 		};
 		4F2ACB9A1D24F0A300F4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F2ACB551D24F09900F4F7FE /* HashableDemo */;
+			target = 4F2ACB551D24F09900F4F7FE /* HashKitDemo */;
 			targetProxy = 4F2ACB991D24F0A300F4F7FE /* PBXContainerItemProxy */;
 		};
 		4F2ACBA01D24F0A300F4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F2ACB8B1D24F0A300F4F7FE /* Hashable */;
+			target = 4F2ACB8B1D24F0A300F4F7FE /* HashKit */;
 			targetProxy = 4F2ACB9F1D24F0A300F4F7FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -604,7 +604,7 @@
 				INFOPLIST_FILE = HashableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKitDemo;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 			};
 			name = Debug;
@@ -617,7 +617,7 @@
 				INFOPLIST_FILE = HashableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKitDemo;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CommonCrypto";
 			};
 			name = Release;
@@ -629,8 +629,8 @@
 				INFOPLIST_FILE = HashableDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+				PRODUCT_NAME = HashKitDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashKitDemo.app/HashKitDemo";
 			};
 			name = Debug;
 		};
@@ -641,8 +641,8 @@
 				INFOPLIST_FILE = HashableDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+				PRODUCT_NAME = HashKitDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashKitDemo.app/HashKitDemo";
 			};
 			name = Release;
 		};
@@ -652,7 +652,7 @@
 				INFOPLIST_FILE = HashableDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKitDemo;
 				TEST_TARGET_NAME = HashableDemo;
 			};
 			name = Debug;
@@ -663,7 +663,7 @@
 				INFOPLIST_FILE = HashableDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKitDemo;
 				TEST_TARGET_NAME = HashableDemo;
 			};
 			name = Release;
@@ -720,7 +720,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashKitDemo.app/HashKitDemo";
 			};
 			name = Debug;
 		};
@@ -731,14 +731,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashableDemo.app/HashableDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashKitDemo.app/HashKitDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F2ACB511D24F09900F4F7FE /* Build configuration list for PBXProject "HashableDemo" */ = {
+		4F2ACB511D24F09900F4F7FE /* Build configuration list for PBXProject "HashKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F2ACB7C1D24F09A00F4F7FE /* Debug */,
@@ -747,37 +747,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F2ACB7E1D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemo" */ = {
+		4F2ACB7E1D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F2ACB7F1D24F09A00F4F7FE /* Debug */,
 				4F2ACB801D24F09A00F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4F2ACB811D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemoTests" */ = {
+		4F2ACB811D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F2ACB821D24F09A00F4F7FE /* Debug */,
 				4F2ACB831D24F09A00F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4F2ACB841D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashableDemoUITests" */ = {
+		4F2ACB841D24F09A00F4F7FE /* Build configuration list for PBXNativeTarget "HashKitDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F2ACB851D24F09A00F4F7FE /* Debug */,
 				4F2ACB861D24F09A00F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "Hashable" */ = {
+		4F2ACBA31D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "HashKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F2ACBA41D24F0A400F4F7FE /* Debug */,
 				4F2ACBA51D24F0A400F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F2ACBA71D24F0A400F4F7FE /* Build configuration list for PBXNativeTarget "HashableTests" */ = {
 			isa = XCConfigurationList;
@@ -786,6 +790,7 @@
 				4F2ACBA91D24F0A400F4F7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

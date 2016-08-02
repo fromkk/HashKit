@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Hashable
+import HashKit
 
 class ViewController: UIViewController {
 

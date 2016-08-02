@@ -58,7 +58,7 @@ public enum HashableType {
     }
 }
 
-public protocol Hashable {
+public protocol HashKit {
     func md5() -> String?
     func sha1() -> String?
     func sha224() -> String?
@@ -67,7 +67,7 @@ public protocol Hashable {
     func sha512() -> String?
 }
 
-extension NSData: Hashable {
+extension NSData: HashKit {
     public func md5() -> String? {
         return HashableType.md5.hash(self)
     }
@@ -93,7 +93,7 @@ extension NSData: Hashable {
     }
 }
 
-extension String: Hashable {
+extension String: HashKit {
     public func md5() -> String? {
         guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
             return nil

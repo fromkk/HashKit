@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F2ACB8B1D24F0A300F4F7FE"
-               BuildableName = "Hashable.framework"
-               BlueprintName = "Hashable"
-               ReferencedContainer = "container:HashableDemo.xcodeproj">
+               BuildableName = "HashKit.framework"
+               BlueprintName = "HashKit"
+               ReferencedContainer = "container:HashKitDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F2ACB8B1D24F0A300F4F7FE"
-            BuildableName = "Hashable.framework"
-            BlueprintName = "Hashable"
-            ReferencedContainer = "container:HashableDemo.xcodeproj">
+            BuildableName = "HashKit.framework"
+            BlueprintName = "HashKit"
+            ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F2ACB8B1D24F0A300F4F7FE"
-            BuildableName = "Hashable.framework"
-            BlueprintName = "Hashable"
-            ReferencedContainer = "container:HashableDemo.xcodeproj">
+            BuildableName = "HashKit.framework"
+            BlueprintName = "HashKit"
+            ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
