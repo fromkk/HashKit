@@ -21,11 +21,11 @@
 		4F2ACBA21D24F0A300F4F7FE /* HashKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F2ACBAD1D24F0BE00F4F7FE /* HashKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */; };
 		4F47C5EA1D62DB94007DD240 /* HashKitTv.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F47C5E91D62DB94007DD240 /* HashKitTv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F47C5F11D62DB95007DD240 /* HashKitTv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47C5E71D62DB94007DD240 /* HashKitTv.framework */; };
+		4F47C5F11D62DB95007DD240 /* HashKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47C5E71D62DB94007DD240 /* HashKit.framework */; };
 		4F47C5F61D62DB95007DD240 /* HashKitTvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47C5F51D62DB95007DD240 /* HashKitTvTests.swift */; };
 		4F47C5FE1D62DBA4007DD240 /* HashKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */; };
 		4F47C6071D62DBBD007DD240 /* HashKitMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F47C6061D62DBBD007DD240 /* HashKitMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F47C60E1D62DBBD007DD240 /* HashKitMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47C6041D62DBBD007DD240 /* HashKitMac.framework */; };
+		4F47C60E1D62DBBD007DD240 /* HashKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47C6041D62DBBD007DD240 /* HashKit.framework */; };
 		4F47C6131D62DBBD007DD240 /* HashKitMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47C6121D62DBBD007DD240 /* HashKitMacTests.swift */; };
 		4F47C61B1D62DBC6007DD240 /* HashKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */; };
 		4F47C66B1D62DDC2007DD240 /* HashKitWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F47C66A1D62DDC2007DD240 /* HashKitWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -119,19 +119,19 @@
 		4F2ACB9C1D24F0A300F4F7FE /* HashableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTests.swift; sourceTree = "<group>"; };
 		4F2ACB9E1D24F0A300F4F7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F2ACBAB1D24F0BE00F4F7FE /* HashKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashKit.swift; sourceTree = "<group>"; };
-		4F47C5E71D62DB94007DD240 /* HashKitTv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKitTv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F47C5E71D62DB94007DD240 /* HashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47C5E91D62DB94007DD240 /* HashKitTv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashKitTv.h; sourceTree = "<group>"; };
 		4F47C5EB1D62DB94007DD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F47C5F01D62DB95007DD240 /* HashKitTvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashKitTvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47C5F51D62DB95007DD240 /* HashKitTvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashKitTvTests.swift; sourceTree = "<group>"; };
 		4F47C5F71D62DB95007DD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F47C6041D62DBBD007DD240 /* HashKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F47C6041D62DBBD007DD240 /* HashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47C6061D62DBBD007DD240 /* HashKitMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashKitMac.h; sourceTree = "<group>"; };
 		4F47C6081D62DBBD007DD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F47C60D1D62DBBD007DD240 /* HashKitMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashKitMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47C6121D62DBBD007DD240 /* HashKitMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashKitMacTests.swift; sourceTree = "<group>"; };
 		4F47C6141D62DBBD007DD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F47C6681D62DDC2007DD240 /* HashKitWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKitWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F47C6681D62DDC2007DD240 /* HashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47C66A1D62DDC2007DD240 /* HashKitWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashKitWatch.h; sourceTree = "<group>"; };
 		4F47C66C1D62DDC2007DD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F47C5F11D62DB95007DD240 /* HashKitTv.framework in Frameworks */,
+				4F47C5F11D62DB95007DD240 /* HashKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F47C60E1D62DBBD007DD240 /* HashKitMac.framework in Frameworks */,
+				4F47C60E1D62DBBD007DD240 /* HashKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,11 +240,11 @@
 				4F2ACB751D24F09A00F4F7FE /* HashKitDemo.xctest */,
 				4F2ACB8C1D24F0A300F4F7FE /* HashKit.framework */,
 				4F2ACB951D24F0A300F4F7FE /* HashableTests.xctest */,
-				4F47C5E71D62DB94007DD240 /* HashKitTv.framework */,
+				4F47C5E71D62DB94007DD240 /* HashKit.framework */,
 				4F47C5F01D62DB95007DD240 /* HashKitTvTests.xctest */,
-				4F47C6041D62DBBD007DD240 /* HashKitMac.framework */,
+				4F47C6041D62DBBD007DD240 /* HashKit.framework */,
 				4F47C60D1D62DBBD007DD240 /* HashKitMacTests.xctest */,
-				4F47C6681D62DDC2007DD240 /* HashKitWatch.framework */,
+				4F47C6681D62DDC2007DD240 /* HashKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 			);
 			name = HashKitTv;
 			productName = HashKitTv;
-			productReference = 4F47C5E71D62DB94007DD240 /* HashKitTv.framework */;
+			productReference = 4F47C5E71D62DB94007DD240 /* HashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4F47C5EF1D62DB94007DD240 /* HashKitTvTests */ = {
@@ -532,7 +532,7 @@
 			);
 			name = HashKitMac;
 			productName = HashKitMac;
-			productReference = 4F47C6041D62DBBD007DD240 /* HashKitMac.framework */;
+			productReference = 4F47C6041D62DBBD007DD240 /* HashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4F47C60C1D62DBBD007DD240 /* HashKitMacTests */ = {
@@ -568,7 +568,7 @@
 			);
 			name = HashKitWatch;
 			productName = HashKitWatch;
-			productReference = 4F47C6681D62DDC2007DD240 /* HashKitWatch.framework */;
+			productReference = 4F47C6681D62DDC2007DD240 /* HashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1097,7 +1097,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitTv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1119,7 +1119,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitTv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1169,7 +1169,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1193,7 +1193,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1242,7 +1242,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1265,7 +1265,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.HashKitWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HashKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1375,6 +1375,7 @@
 				4F47C66E1D62DDC2007DD240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
