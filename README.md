@@ -19,7 +19,7 @@ Execute `carthage update` from command line.
 
 # Usage
 
-```
+```swift
 import HashKit
 
 //NSData
