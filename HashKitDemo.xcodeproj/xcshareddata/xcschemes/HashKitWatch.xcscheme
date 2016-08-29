@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F47C6671D62DDC2007DD240"
-               BuildableName = "HashKitWatch.framework"
+               BuildableName = "HashKit.framework"
                BlueprintName = "HashKitWatch"
                ReferencedContainer = "container:HashKitDemo.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F47C6671D62DDC2007DD240"
-            BuildableName = "HashKitWatch.framework"
+            BuildableName = "HashKit.framework"
             BlueprintName = "HashKitWatch"
             ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F47C6671D62DDC2007DD240"
-            BuildableName = "HashKitWatch.framework"
+            BuildableName = "HashKit.framework"
             BlueprintName = "HashKitWatch"
             ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>

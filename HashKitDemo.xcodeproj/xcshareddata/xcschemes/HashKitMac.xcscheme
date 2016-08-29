@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F47C6031D62DBBD007DD240"
-               BuildableName = "HashKitMac.framework"
+               BuildableName = "HashKit.framework"
                BlueprintName = "HashKitMac"
                ReferencedContainer = "container:HashKitDemo.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F47C6031D62DBBD007DD240"
-            BuildableName = "HashKitMac.framework"
+            BuildableName = "HashKit.framework"
             BlueprintName = "HashKitMac"
             ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F47C6031D62DBBD007DD240"
-            BuildableName = "HashKitMac.framework"
+            BuildableName = "HashKit.framework"
             BlueprintName = "HashKitMac"
             ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F47C6031D62DBBD007DD240"
-            BuildableName = "HashKitMac.framework"
+            BuildableName = "HashKit.framework"
             BlueprintName = "HashKitMac"
             ReferencedContainer = "container:HashKitDemo.xcodeproj">
          </BuildableReference>
