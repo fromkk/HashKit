@@ -17,8 +17,9 @@ public enum HashableType {
     case sha384
     case sha512
 
-    func hash(data: NSData) -> String? {
-        let algorithm: (UnsafePointer<Void>, CC_LONG, UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>
+    func hash(data: Data) -> String? {
+        typealias HashType = ((UnsafeRawPointer, CC_LONG, UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>!)
+        let algorithm: HashType
         let digestLength: Int32
         switch self {
         case .md5:
@@ -47,13 +48,17 @@ public enum HashableType {
             break
         }
         let digestLen: Int = Int(digestLength)
-        let buffer: UnsafeMutablePointer<CUnsignedChar> = UnsafeMutablePointer<CUnsignedChar>.alloc(digestLen)
-        algorithm(data.bytes, CUnsignedInt(data.length), buffer)
+        let buffer: UnsafeMutablePointer<CUnsignedChar> = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+
+        let value: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer.allocate(capacity: data.count)
+        data.copyBytes(to: value, count: data.count)
+        _ = algorithm(value, CUnsignedInt(data.count), buffer)
         var result: String = ""
         for i in 0..<digestLen {
-            result = result.stringByAppendingFormat("%02x", buffer[i])
+            result += String(format: "%02x", buffer[i])
         }
-        buffer.dealloc(digestLen)
+        value.deallocate(capacity: data.count)
+        buffer.deallocate(capacity: digestLen)
         return result
     }
 }
@@ -67,73 +72,73 @@ public protocol HashKit {
     func sha512() -> String?
 }
 
-extension NSData: HashKit {
+extension Data: HashKit {
     public func md5() -> String? {
-        return HashableType.md5.hash(self)
+        return HashableType.md5.hash(data: self)
     }
 
     public func sha1() -> String? {
-        return HashableType.sha1.hash(self)
+        return HashableType.sha1.hash(data: self)
     }
 
     public func sha224() -> String? {
-        return HashableType.sha224.hash(self)
+        return HashableType.sha224.hash(data: self)
     }
 
     public func sha256() -> String? {
-        return HashableType.sha256.hash(self)
+        return HashableType.sha256.hash(data: self)
     }
 
     public func sha384() -> String? {
-        return HashableType.sha384.hash(self)
+        return HashableType.sha384.hash(data: self)
     }
 
     public func sha512() -> String? {
-        return HashableType.sha512.hash(self)
+        return HashableType.sha512.hash(data: self)
     }
 }
 
 extension String: HashKit {
     public func md5() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.md5.hash(data)
+        return HashableType.md5.hash(data: data)
     }
 
     public func sha1() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.sha1.hash(data)
+        return HashableType.sha1.hash(data: data)
     }
 
     public func sha224() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.sha224.hash(data)
+        return HashableType.sha224.hash(data: data)
     }
 
     public func sha256() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.sha256.hash(data)
+        return HashableType.sha256.hash(data: data)
     }
 
     public func sha384() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.sha384.hash(data)
+        return HashableType.sha384.hash(data: data)
     }
 
     public func sha512() -> String? {
-        guard let data: NSData = self.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data: Data = self.data(using: String.Encoding.utf8) else {
             return nil
         }
-        return HashableType.sha512.hash(data)
+        return HashableType.sha512.hash(data: data)
     }
 }
 
@@ -143,14 +148,14 @@ public protocol HashableHmac {
 
 extension String: HashableHmac {
     public func hmac(algorithm: HashableType, key: String) -> String? {
-        guard let str: [CChar] = self.cStringUsingEncoding(NSUTF8StringEncoding) else {
+        guard let str: [CChar] = self.cString(using: String.Encoding.utf8) else {
             return nil
         }
-        guard let keyStr: [CChar] = key.cStringUsingEncoding(NSUTF8StringEncoding) else {
+        guard let keyStr: [CChar] = key.cString(using: String.Encoding.utf8) else {
             return nil
         }
 
-        let strLen: Int = Int(self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+        let strLen: Int = Int(self.lengthOfBytes(using: String.Encoding.utf8))
 
         let algo: CCHmacAlgorithm
         let digestLength: Int32
@@ -181,16 +186,16 @@ extension String: HashableHmac {
             break
         }
         let digestLen: Int = Int(digestLength)
-        let buffer = UnsafeMutablePointer<CUnsignedChar>.alloc(digestLen)
-        let keyLen = Int(key.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+        let buffer = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+        let keyLen = Int(key.lengthOfBytes(using: String.Encoding.utf8))
 
         CCHmac(algo, keyStr, keyLen, str, strLen, buffer)
 
         var result: String = ""
         for i in 0..<digestLen {
-            result = result.stringByAppendingFormat("%02x", buffer[i])
+            result += String(format: "%02x", buffer[i])
         }
-        buffer.dealloc(digestLen)
+        buffer.deallocate(capacity: digestLen)
 
         return result
     }
