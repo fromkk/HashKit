@@ -1,5 +1,5 @@
-module CommonCrypto {
-    header "/usr/include/CommonCrypto/CommonCrypto.h"
-	export *
+module CommonCrypto [system] [extern_c] {
+		    umbrella header "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/CommonCrypto/CommonCrypto.h"
+		    export *
 }
 
