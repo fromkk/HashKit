@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CommonCrypto
 
 public enum HashableType {
     case md5
