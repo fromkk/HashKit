@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import HashKitTv
+@testable import HashKit
 
 class HashKitTvTests: XCTestCase {
     
