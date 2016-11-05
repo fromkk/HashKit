@@ -41,5 +41,5 @@ print(text.sha384())
 print(text.sha512())
 
 //hmac
-text.hmac(.md5, key: "some key")
+text.hmac(algorithm: .md5, key: "some key")
 ```
