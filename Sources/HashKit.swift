@@ -16,7 +16,7 @@ public enum HashableType {
     case sha384
     case sha512
 
-    func hash(data: Data) -> String? {
+    public func hash(data: Data) -> String? {
         typealias HashType = ((UnsafeRawPointer, CC_LONG, UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>!)
         let algorithm: HashType
         let digestLength: Int32
