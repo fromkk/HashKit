@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fromkk/HashKit.svg?branch=master)](https://travis-ci.org/fromkk/HashKit)
+
 # HashKit
 
 `HashKit` is wrapped C style library CommonCrypt in Swift.
