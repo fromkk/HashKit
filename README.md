@@ -12,7 +12,7 @@ If you don't have `Cartfile`, should make that file in your top of project.
 Add line to `Cartfile`  
 
 ```
-github "fromkk/HashKit" == 1.0.0
+github "fromkk/HashKit" == 1.0.2
 ```
 
 Execute `carthage update` from command line.

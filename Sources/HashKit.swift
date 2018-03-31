@@ -17,7 +17,7 @@ public enum HashableType {
     case sha512
 
     public func hash(data: Data) -> String? {
-        typealias HashType = ((UnsafeRawPointer, CC_LONG, UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>!)
+        typealias HashType = ((UnsafeRawPointer, CC_LONG, UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>?)
         let algorithm: HashType
         let digestLength: Int32
         switch self {
@@ -56,8 +56,8 @@ public enum HashableType {
         for i in 0..<digestLen {
             result += String(format: "%02x", buffer[i])
         }
-        value.deallocate(capacity: data.count)
-        buffer.deallocate(capacity: digestLen)
+        value.deallocate()
+        buffer.deallocate()
         return result
     }
 }
@@ -194,7 +194,7 @@ extension String: HashableHmac {
         for i in 0..<digestLen {
             result += String(format: "%02x", buffer[i])
         }
-        buffer.deallocate(capacity: digestLen)
+        buffer.deallocate()
 
         return result
     }
