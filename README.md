@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/fromkk/HashKit.svg?branch=master)](https://travis-ci.org/fromkk/HashKit)
+[![Build Status](https://app.bitrise.io/app/6e120dc4d3f844a5/status.svg?token=ROncFpKtlUPA1mzZkcBxZQ&branch=master)](https://app.bitrise.io/app/6e120dc4d3f844a5)
 
 # HashKit
 
